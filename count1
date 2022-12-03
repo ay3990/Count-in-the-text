@@ -1,0 +1,23 @@
+sentences=input('Enter a few sentences: \n')
+#Number of words:
+sentences1=sentences.replace('.',' ')
+sentences1=sentences1.replace('!',' ')
+sentences1=sentences1.replace('?',' ')
+sentences1=sentences1.replace(':',' ')
+sentences1=sentences1.replace(',',' ')
+words=sentences1.split(' ')
+d=words.count('')
+k_num=len(words)-d
+print('Number of words= ',k_num)
+#Number of letters:
+letters=sentences1.replace(' ','')
+h_num=len(letters)
+print('Number of letters= ',h_num)
+#Number of sentences:
+sentence=sentences.split('.')
+b=sentence.count('')
+j_num=len(sentence)-b
+print('Number of sentences= ',j_num)
+#Putting 'r' instead of 'p' in the text:
+sentences2=sentences.replace('p','r')
+print('new sentences= ',sentences2)
