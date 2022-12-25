@@ -1,0 +1,51 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4NthHxB8kjWv",
+        "outputId": "f76b1312-9f0e-430c-c7b8-40372e21a5a3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number: 4\n",
+            "enter a number:8\n",
+            "enter a number:9\n",
+            "enter a number:0\n",
+            "[9, 8, 4]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#برنامه ای که عدد دریافت، تا جایی که ۰ وارد شود. سپس چاپ بالعکس اعداد واردشده\n",
+        "b=[]\n",
+        "a=int (input(\"enter a number: \"))\n",
+        "while (a!=0):\n",
+        "  b.append(a)\n",
+        "  a=int(input(\"enter a number:\"))\n",
+        "print(b[::-1])"
+      ]
+    }
+  ]
+}
